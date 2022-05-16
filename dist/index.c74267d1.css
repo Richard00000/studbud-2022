@@ -1,5 +1,128 @@
+.task {
+  background-color: #fff;
+}
+
+#header {
+  margin-top: 20px;
+}
+
+#topic {
+  margin-top: 20ps;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#split {
+  width: auto;
+  height: 2px;
+  background-color: #000;
+}
+
+.timer {
+  text-align: center;
+  margin: auto;
+  display: inline-flex;
+}
+
+#timer_display {
+  width: 500px;
+  height: 500px;
+  background-color: #f0f8ff;
+  border-radius: 500px;
+  align-items: center;
+  margin-bottom: 40px;
+  display: inline-flex;
+}
+
+#inn_ring {
+  width: 425px;
+  height: 425px;
+  background-color: #e56b6f;
+  border-radius: 400px;
+  align-items: center;
+  margin: auto;
+}
+
+#time {
+  text-align: center;
+  color: #fff;
+  margin-top: 160px;
+  font-size: 70px;
+  font-weight: bolder;
+  display: inline-flex;
+}
+
+#mode_backgroud {
+  width: 430px;
+  height: 60px;
+  background-color: #c95e55;
+  border-radius: 13px;
+  align-content: center;
+  align-items: center;
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+#mode {
+  margin-bottom: 55px;
+  margin-left: auto;
+}
+
+#button {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#mode button {
+  color: #e56b6f;
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  border-radius: 13px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#button button {
+  color: #e56b6f;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 13px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.grid-container {
+  grid-template: "timer timer task" 1fr
+                 "timer timer task" 1fr
+                 "timer timer task" 1fr
+                 / 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  gap: 1px;
+  display: grid;
+}
+
 body {
-  background-color: #7fffd4;
+  background-color: #e56b6f;
+}
+
+.timer {
+  grid-area: timer;
+  align-items: center;
+  display: inline-block;
+}
+
+.task {
+  grid-area: task;
+  place-self: stretch stretch;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

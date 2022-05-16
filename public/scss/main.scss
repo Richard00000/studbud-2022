@@ -1,2 +1,29 @@
-@import 'layout';
-@import 'navigation';
+@import 'task';
+@import 'timer';
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      "timer timer task"
+      "timer timer task"
+      "timer timer task";
+  }
+  body{
+    background-color:#E56B6F;
+  } 
+  .timer {
+    display: inline-block;
+    align-items: center;
+    grid-area: timer;
+  }
+  .task {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: task;
+  }
+ 
