@@ -1,10 +1,10 @@
-.timer{
+.timer {
     display: inline-flex;
     text-align: center;
     margin: auto;
 }
 
-#timer_display{
+#timer_display {
     display: inline-flex;
     align-items: center;
     background-color: aliceblue;
@@ -14,8 +14,8 @@
     border-radius: 500px;
 }
 
-#inn_ring{
-    background-color:#E56B6F;
+#inn_ring {
+    background-color: #E56B6F;
     align-items: center;
     margin: auto;
     width: 425px;
@@ -23,16 +23,16 @@
     border-radius: 400px;
 }
 
-#time{
+#time {
     display: inline-flex;
     text-align: center;
     color: white;
-    font-size : 70px;
+    font-size: 70px;
     font-weight: bolder;
     margin-top: 160px;
 }
 
-#mode_backgroud{
+#mode_backgroud {
     display: inline-flex;
     align-items: center;
     align-content: center;
@@ -40,40 +40,41 @@
     margin-top: 20px;
     width: 430px;
     height: 60px;
-    border-radius : 13px;
+    border-radius: 13px;
 
 }
-#mode{
+
+#mode {
     margin-left: auto;
     margin-bottom: 55px;
 }
 
-#button{
+#button {
     margin-top: 30px;
     margin-left: 10px;
 }
 
-#mode button{
-    background:white; 
-    border:none; 
-    color:#E56B6F;
-    width: 200px; 
-    height : 50px;
-    font-size : 20px;
+#mode button {
+    background: white;
+    border: none;
+    color: #E56B6F;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius : 13px;
+    border-radius: 13px;
     margin: auto;
-  }
+}
 
-#button button { 
-    background:white; 
-    border:none; 
-    color:#E56B6F;
-    width: 180px; 
-    height : 50px;
+#button button {
+    background: white;
+    border: none;
+    color: #E56B6F;
+    width: 180px;
+    height: 50px;
     margin-left: 20px;
-    font-size : 20px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius : 13px;
-    cursor:pointer; 
-  }
+    border-radius: 13px;
+    cursor: pointer;
+}
