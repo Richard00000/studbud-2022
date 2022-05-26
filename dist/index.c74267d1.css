@@ -1,5 +1,5 @@
 .task {
-  background-color: #fff;
+  background-color: #e56b6f;
 }
 
 #header {
@@ -7,6 +7,7 @@
 }
 
 #topic {
+  color: #fff;
   text-align: left;
   margin-top: 20px;
   font-size: 30px;
@@ -15,8 +16,64 @@
 
 #split {
   width: auto;
-  height: 2px;
-  background-color: #000;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+#music_plyer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#mp {
+  width: 90%;
+}
+
+#task_card {
+  margin-top: 15px;
+}
+
+#add_task {
+  color: #e56b6f;
+  width: 80%;
+  height: 30px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 13px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  transition-duration: .4s;
+}
+
+#add_task:hover {
+  color: #fff;
+  background-color: #c95e55;
+}
+
+#reading_card {
+  margin-top: 15px;
+}
+
+#add_reading {
+  color: #e56b6f;
+  width: 80%;
+  height: 30px;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 13px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  transition-duration: .4s;
+}
+
+#add_reading:hover {
+  color: #fff;
+  background-color: #c95e55;
 }
 
 .timer {
@@ -97,6 +154,12 @@
   margin-left: 20px;
   font-size: 20px;
   font-weight: bold;
+  transition-duration: .4s;
+}
+
+#button button:hover {
+  color: #fff;
+  background-color: #c95e55;
 }
 
 .grid-container {

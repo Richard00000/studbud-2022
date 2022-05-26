@@ -76,5 +76,11 @@
     font-size: 20px;
     font-weight: bold;
     border-radius: 13px;
+    transition-duration: 0.4s;
     cursor: pointer;
+}
+
+#button button:hover {
+    background-color: #C95E55;
+    color: white;
 }
