@@ -16,6 +16,5 @@ document.getElementById('add_reading').onclick = function () {
                 this.parentNode.remove();
             }
         }
-
     }
 }
