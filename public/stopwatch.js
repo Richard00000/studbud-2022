@@ -1,8 +1,37 @@
+const po_btn = document.getElementById('timer_mode_po');
+const st_btn = document.getElementById('timer_mode_sw');
+
+var pomo = document.getElementById("pomodoro");
+pomo.style.display = "block";
+
+var stopw = document.getElementById("count_up");
+stopw.style.display = "none";
+
+
+po_btn.addEventListener("click", function () {
+    pomo.style.display = "block";
+    stopw.style.display = "none";
+    st_btn.style.backgroundColor = '#C95E55';
+    st_btn.style.color = 'white';
+    po_btn.style.backgroundColor = 'white';
+    po_btn.style.color = '#C95E55';
+});
+
+st_btn.addEventListener("click", function () {
+    pomo.style.display = "none";
+    stopw.style.display = "block";
+    st_btn.style.backgroundColor = 'white';
+    st_btn.style.color = '#C95E55';
+    po_btn.style.backgroundColor = '#C95E55';
+    po_btn.style.color = 'white';
+
+});
+
 
 // seting the variable and the state for the timer
-let hr = "0" + 0;
-let min = "0" + 0;
-let sec = "0" + 0;
+let hr = "00";
+let min = "00";
+let sec = "00";
 timeActive = false;
 
 ///The body for the stop watch
@@ -54,9 +83,9 @@ function control(i) {
             //seting the swich to reset the timer.
             timeActive = false;
             //resernt the number to double digit.
-            hr = "0" + 0;
-            min = "0" + 0;
-            sec = "0" + 0;
+            hr = "00";
+            min = "00";
+            sec = "00";
             break;
     }
 }
