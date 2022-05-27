@@ -25,6 +25,7 @@
       </div>
 
       <!--Timer display!-->
+    <div id="pomodoro"></div>
       <div id="timer_display">
         <div id="inn_ring">
           <div id="time">
@@ -57,22 +58,29 @@
           </audio>
           <div id="topic">Task List</div>
           <div id="split"></div>
+
           <div id="task_card">
             <button id="add_task">+ Add Task</button>
           </div>
           <div id="topic">Reading List</div>
           <div id="split"></div>
+
           <div id="reading_card">
-            <button id="add_reading">+ Add Reading</button>
+            <div id="input_box">
+              <input id="user_input" type="text" placeholder="Please enter the content...">
+              <button id="add_reading">+ Add</button>
+            </div>
+            <div id="card_content"></div>
           </div>
+
         </div>
       </div>
     </div>
-
   </div>
   </div>
 
 </body>
-<script src="script.js"></script>
+<script src="pomodoro.js"></script>
+<script src="readinglist.js"></script>
 
 </html>

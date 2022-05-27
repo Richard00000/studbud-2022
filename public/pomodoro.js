@@ -27,11 +27,6 @@ var pomodoro = {
         };
     },
 
-    resetVariables: function (mins, secs, started) {
-        this.minutes = mins;
-        this.seconds = secs;
-        this.started = started;
-    },
     startWork: function () {
         this.resetVariables(25, 0, true);
     },
@@ -51,10 +46,18 @@ var pomodoro = {
         }
         return num;
     },
+
+    resetVariables: function (mins, secs, started) {
+        this.minutes = mins;
+        this.seconds = secs;
+        this.started = started;
+    },
+
     updateDom: function () {
         this.minDom.innerHTML = this.toDoubleDigit(this.minutes);
         this.secDom.innerHTML = this.toDoubleDigit(this.seconds);
     },
+
     intervalCallback: function () {
         if (!this.started) return false;
         if (this.seconds == 0) {

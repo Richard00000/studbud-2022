@@ -31,19 +31,21 @@
 }
 
 #task_card {
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
 }
 
 #add_task {
     background: white;
     border: none;
     color: #E56B6F;
-    width: 80%;
+    width: 50%;
     height: 30px;
-    margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 13px;
+    border-radius: 8px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -54,24 +56,92 @@
 }
 
 #reading_card {
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+#input_box{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+#user_input {
+    color: #E56B6F;
+    width: 77%;
+    height: 30px;
+    font-size: medium;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: none;
 }
 
 #add_reading {
     background: white;
     border: none;
     color: #E56B6F;
-    width: 80%;
-    height: 30px;
-    margin-left: 20px;
+    width: 20%;
+    height: 32px;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 13px;
+    border-radius: 8px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
 #add_reading:hover {
+    background-color: #C95E55;
+    color: white;
+}
+
+#card_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 30px;
+    justify-content: center;
+    border-radius: 8px;
+    color: #E56B6F;
+    cursor: pointer;
+}
+
+.reading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    margin-top: 2%;
+    min-height: 30px;
+    border-radius: 5px;
+    padding-right: 6px;
+    padding-left: 6px;
+    cursor: pointer;
+}
+
+.reading span {
+    text-align: left;
+    font-size: medium;
+    color: #E56B6F;
+}
+
+.reading button {
+    width: 20%;
+    height: 25px;
+    border: none;
+    color: white;
+    display: flex;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E56B6F;
+    cursor: pointer;
+}
+
+.reading button:hover {
     background-color: #C95E55;
     color: white;
 }
