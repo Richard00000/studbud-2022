@@ -1,32 +1,4 @@
-const po_btn = document.getElementById('timer_mode_po');
-const st_btn = document.getElementById('timer_mode_sw');
-
-var pomo = document.getElementById("pomodoro");
-pomo.style.display = "block";
-
-var stopw = document.getElementById("count_up");
-stopw.style.display = "none";
-
-
-po_btn.addEventListener("click", function () {
-    pomo.style.display = "block";
-    stopw.style.display = "none";
-    st_btn.style.backgroundColor = '#C95E55';
-    st_btn.style.color = 'white';
-    po_btn.style.backgroundColor = 'white';
-    po_btn.style.color = '#C95E55';
-});
-
-st_btn.addEventListener("click", function () {
-    pomo.style.display = "none";
-    stopw.style.display = "block";
-    st_btn.style.backgroundColor = 'white';
-    st_btn.style.color = '#C95E55';
-    po_btn.style.backgroundColor = '#C95E55';
-    po_btn.style.color = 'white';
-
-});
-
+///////////////The JS for the stopwatch(Count_up)/////////////////////////
 
 // seting the variable and the state for the timer
 let hr = "00";

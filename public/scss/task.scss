@@ -1,11 +1,14 @@
+///global Setting
 .task {
     background-color: #E56B6F;
 }
 
+///adjustment for header
 #header {
     margin-top: 20px;
 }
 
+///adjustment for topic text
 #topic {
     color: white;
     margin-top: 20px;
@@ -14,6 +17,7 @@
     font-weight: bolder;
 }
 
+///the contene divider
 #split {
     background-color: white;
     width: auto;
@@ -21,15 +25,18 @@
     margin-top: 5px;
 }
 
+///adjustment for the music plyer div
 #music_plyer {
     text-align: center;
     margin-top: 20px;
 }
 
+///adjustment for the music plyer
 #mp {
     width: 90%;
 }
 
+///adjustment for the task card div
 #task_card {
     display: flex;
     flex-direction: column;
@@ -37,6 +44,7 @@
     margin-top: 2%;
 }
 
+///style for the add task button
 #add_task {
     background: white;
     border: none;
@@ -54,18 +62,83 @@
     background-color: #C95E55;
     color: white;
 }
+////set the add task window at the top 
+.t_form {
+    position: absolute;
+    display: block;
+    z-index: 99;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    top: 263px;
+    left: 762px;
+}
+////style for the add task window/form
+#task_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#task_grid form {
+    width: 300px;
+    height: auto;
+    background-color: #f0f8ff;
+    border-radius: 3%;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    margin-top: 3%;
+
+    label {
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    input {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+////style for the submit button in the add task button
+#task_grid button {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    width: 50%;
+    background: white;
+    border: none;
+    color: #E56B6F;
+    font-weight: bold;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#task_grid button:hover {
+    background: #C95E55;
+    color: white;
+}
+
+///adjustment for the reading list div
 #reading_card {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
 }
-#input_box{
-    width:90%;
+
+///adjustment for the input box div inside the reading list div
+#input_box {
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
+
+///the style of the input box 
 #user_input {
     color: #E56B6F;
     width: 77%;
@@ -76,6 +149,7 @@
     border: none;
 }
 
+///style for the add reading button
 #add_reading {
     background: white;
     border: none;
@@ -94,6 +168,7 @@
     color: white;
 }
 
+///style for the reading list content div
 #card_content {
     display: flex;
     flex-wrap: wrap;
@@ -105,6 +180,7 @@
     cursor: pointer;
 }
 
+///style for the reading list class
 .reading {
     display: flex;
     justify-content: space-between;
@@ -120,12 +196,14 @@
     cursor: pointer;
 }
 
+///style for the reading list content
 .reading span {
     text-align: left;
     font-size: medium;
     color: #E56B6F;
 }
 
+///style for the delect reading button
 .reading button {
     width: 20%;
     height: 25px;
@@ -138,6 +216,7 @@
     align-items: center;
     justify-content: center;
     background-color: #E56B6F;
+    transition-duration: 0.4s;
     cursor: pointer;
 }
 
