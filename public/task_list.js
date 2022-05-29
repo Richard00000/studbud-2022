@@ -3,7 +3,7 @@ const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button")
 
 // Selector for the tasklist output
-var tasklist = document.querySelector("#tasklist > ul");
+var tasklist = document.querySelector("#task_card > ul");
 
 // DOM elements for the task input fields
 var taskInput = document.getElementById("taskInput");
@@ -58,7 +58,8 @@ function renderTask(task) {
     // Create HTML elements
     let item = document.createElement("li");
     item.setAttribute('data-id', task.id);
-    item.innerHTML = "<p>" + "Task:" + task.taskDescription + "Priority:" + task.priorityRating + "Due Date:" + task.dueDate + "EST Time:" + task.estimatedTime + "Note:" + task.input_note + "</p>";
+    item.innerHTML = "<p>" + "Task: " + task.taskDescription + "<br>" + "Priority: " + task.priorityRating + "<br>" + "Due Date: " 
+    + task.dueDate + "<br>" + "EST Time: " + task.estimatedTime + "<br>" + "Note: " + task.input_note + "</p>";
     tasklist.appendChild(item);
 
     // Extra Task DOM elements

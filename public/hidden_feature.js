@@ -61,14 +61,3 @@ add_task_btn.addEventListener('click', function () {
         dis = true;
     }
 });
-
-
-
-// Function to hide the 'you haven't added any tasks' text
-function updateEmpty() {
-    if (taskListArray.length > 0) {
-        document.getElementById('emptyList').style.display = 'none';
-    } else {
-        document.getElementById('emptyList').style.display = 'block';
-    }
-}

@@ -80,16 +80,22 @@
 
 
 
-    <!----------------The Body of the task list--------------------->
+
+
+
+
 
     <div class="task">
 
-      <div id="header">
-        <!----------The body of the reading list------------>
+      <div id="body">
+
+        <!----------------------------- The music player part ---------------------------------->
+
+        <!---------- Title ------------>
         <div id="topic">Music Player</div>
         <div id="split"></div>
 
-        <!-----The music_plyer----->
+        <!--Bodypart of the music player-->
         <div id="music_plyer">
           <audio id="mp" controls src="/public/music/demo.mp3">
             Your browser does not support this
@@ -97,37 +103,43 @@
           </audio>
         </div>
 
-        <!----------Tital------------>
+        <!---------------------------- The music player part end --------------------------------->
+
+
+
+        <!------------------------------- The Task list part ------------------------------------->
+
+        <!---------- Title ------------>
         <div id="topic">Task List</div>
         <div id="split"></div>
 
-        <!----------Add Button and The body of the Task list------------>
+        <!-- The Button for add task and the task list -->
         <div id="task_card">
           <button id="add_task">+ Add Task</button>
-          <div id="tasklist">
-            <p id="emptyList">You have not added any tasks yet.</p>
-            <ul></ul>
+              <p id="emptyList">You have not added any tasks yet.</p>
+              <ul>
           </div>
+
         </div>
 
         <!-- Task form -->
         <div id="task_grid" class="t_form" style="display: none">
           <form id="taskform">
 
-            <!--Task input-->
+            <!------------ Task input -------------->
             <label for="task" style="margin-top: 3%;margin-left: 3%;">Task:</label>
             <input type="text" style="margin-left: 3%;" name="task" id="taskInput" required>
 
-            <!-- Date input -->
+            <!------------ Date input --------------->
             <label for="dueDate" style="margin-top: 3%;margin-left: 3%;">Due Date: </label>
             <input type="date" style="margin-left: 3%;" name="dueDate" id="dueDateInput">
 
-            <!--Est Time-->
-            <label for="estimatedTime" style="margin-top:3%;margin-left: 3%;">Estimated completion time (in
+            <!------------- Est Time ---------------->
+            <label for="estimatedTime" style="margin-top:3%;margin-left: 3%;">EST completion time (in
               hours):</label>
-            <input type="number" style="margin-left: 3%;" name="estimatedTime" id="estimatedTimeInput">
+            <input type="number" style="margin-left: 3%;" min="0" name="estimatedTime" id="estimatedTimeInput">
 
-            <!-- Priority -->
+            <!------------ Priority ----------------->
             <label for="priority" style="margin-top: 3%;margin-left: 3%;">Task Priority:</label>
             <select name="prority" style="margin-left: 3%;" id="priorityInput">
               <option value="">Select one</option>
@@ -141,32 +153,44 @@
             <input id="task_note" style="margin-left: 3%;" type="text" placeholder="Please enter the content...">
             <button type="submit">Submit</button>
           </form>
-
         </div>
 
-        <!----------The body of the reading list------------>
+        <!----------------------------- The task list part end ----------------------------------->
+
+
+
+
+        <!----------------------------- The reading list part ----------------------------------->
 
         <div id="topic">Reading List</div>
         <div id="split"></div>
         <div id="reading_card">
 
-          <!------Where all the input box in the reading list------->
-          <div id="input_box">
+          <div id="reading-grid">
 
-            <!----Button and the input box of the reading list---->
-            <input id="user_input" type="text" placeholder="Please enter the content...">
-            <button id="add_reading">+ Add</button>
+            <!------input box in the reading list------->
+            <form id="readingform">
+              <input type="text" name="reading" id="readInput" required>
+              <button id='reading_submit' type="submit">Submit</button>
+            </form>
+
+            <!----The container for the reading list---->
+            <button id="open_all">Open All</button>
+
+            <div id="displyReading">
+              <p id="readingEmptyList">You have not added any reading yet.</p>
+              <ul></ul>
+            </div>
           </div>
-
-          <!----The container for the reading list---->
-          <div id="card_content"></div>
         </div>
+
+        <!--------------------------The reading list End-------------------------------------->
       </div>
     </div>
   </div>
-  </div>
 
 </body>
+
 <script src="pomodoro.js"></script>
 <script src="readinglist.js"></script>
 <script src="stopwatch.js"></script>

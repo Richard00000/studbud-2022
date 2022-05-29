@@ -2,9 +2,31 @@
 .task {
     background-color: #E56B6F;
 }
+////global setting for the ul and li
+ul {
+    // background-color: #f0f8ff;
+    width: 90%;
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    padding: 2%;
+}
+
+li {
+    width: 100%;
+    background-color: #f0f8ff;
+    list-style: none;
+    margin: 0px;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+p{
+    color: #E56B6F;
+}
 
 ///adjustment for header
-#header {
+#body {
     margin-top: 20px;
 }
 
@@ -29,19 +51,28 @@
 #music_plyer {
     text-align: center;
     margin-top: 20px;
+
+    //adjustment for the music plyer
+    #mp {
+        width: 90%;
+    }
 }
 
-///adjustment for the music plyer
-#mp {
-    width: 90%;
-}
 
 ///adjustment for the task card div
 #task_card {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
+
+    #emptyList {
+        border-radius: 8px;
+        padding: 1%;
+        background-color: #f0f8ff;
+        color: #E56B6F;
+    }
 }
 
 ///style for the add task button
@@ -62,6 +93,7 @@
     background-color: #C95E55;
     color: white;
 }
+
 ////set the add task window at the top 
 .t_form {
     position: absolute;
@@ -74,54 +106,59 @@
     top: 263px;
     left: 762px;
 }
+
 ////style for the add task window/form
 #task_grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-#task_grid form {
-    width: 300px;
-    height: auto;
-    background-color: #f0f8ff;
-    border-radius: 3%;
-    flex-direction: column;
-    align-items: flex-start;
-    display: flex;
-    margin-top: 3%;
-
-    label {
-        font-size: medium;
-        font-weight: bold;
-    }
-
-    input {
-        width: 50%;
+    form {
+        width: 300px;
         height: auto;
+        background-color: #f0f8ff;
+        border-radius: 3%;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        margin-top: 3%;
+
+        label {
+            color: #E56B6F;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        input {
+            width: 50%;
+            height: auto;
+        }
     }
+
+    ////style for the submit button in the add task button
+    button {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 3%;
+        width: 50%;
+        background: white;
+        border: none;
+        color: #E56B6F;
+        font-weight: bold;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #C95E55;
+        color: white;
+    }
+
 }
 
 
-////style for the submit button in the add task button
-#task_grid button {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 3%;
-    width: 50%;
-    background: white;
-    border: none;
-    color: #E56B6F;
-    font-weight: bold;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
 
-#task_grid button:hover {
-    background: #C95E55;
-    color: white;
-}
 
 ///adjustment for the reading list div
 #reading_card {
@@ -129,98 +166,4 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
-}
-
-///adjustment for the input box div inside the reading list div
-#input_box {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
-///the style of the input box 
-#user_input {
-    color: #E56B6F;
-    width: 77%;
-    height: 30px;
-    font-size: medium;
-    margin-bottom: 2%;
-    border-radius: 5px;
-    border: none;
-}
-
-///style for the add reading button
-#add_reading {
-    background: white;
-    border: none;
-    color: #E56B6F;
-    width: 20%;
-    height: 32px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-#add_reading:hover {
-    background-color: #C95E55;
-    color: white;
-}
-
-///style for the reading list content div
-#card_content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    height: 30px;
-    justify-content: center;
-    border-radius: 8px;
-    color: #E56B6F;
-    cursor: pointer;
-}
-
-///style for the reading list class
-.reading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    height: auto;
-    width: 100%;
-    margin-top: 2%;
-    min-height: 30px;
-    border-radius: 5px;
-    padding-right: 6px;
-    padding-left: 6px;
-    cursor: pointer;
-}
-
-///style for the reading list content
-.reading span {
-    text-align: left;
-    font-size: medium;
-    color: #E56B6F;
-}
-
-///style for the delect reading button
-.reading button {
-    width: 20%;
-    height: 25px;
-    border: none;
-    color: white;
-    display: flex;
-    font-size: larger;
-    font-weight: bolder;
-    border-radius: 6px;
-    align-items: center;
-    justify-content: center;
-    background-color: #E56B6F;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.reading button:hover {
-    background-color: #C95E55;
-    color: white;
 }
