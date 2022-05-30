@@ -2,28 +2,6 @@
 .task {
     background-color: #E56B6F;
 }
-////global setting for the ul and li
-ul {
-    // background-color: #f0f8ff;
-    width: 90%;
-    list-style: none;
-    margin: 0px;
-    display: flex;
-    padding: 2%;
-}
-
-li {
-    width: 100%;
-    background-color: #f0f8ff;
-    list-style: none;
-    margin: 0px;
-    padding: 2%;
-    border-radius: 8px;
-}
-
-p{
-    color: #E56B6F;
-}
 
 ///adjustment for header
 #body {
@@ -67,32 +45,86 @@ p{
     align-items: center;
     margin-top: 2%;
 
+    ///style for the add task button
+    #add_task {
+        background: white;
+        border: none;
+        color: #E56B6F;
+        width: 50%;
+        height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    #add_task:hover {
+        background-color: #C95E55;
+        color: white;
+    }
+
     #emptyList {
         border-radius: 8px;
         padding: 1%;
         background-color: #f0f8ff;
         color: #E56B6F;
+        font-weight: bold;
+
+
     }
+
+    ////global setting for the ul and li
+
+    ul {
+        // background-color: #f0f8ff;
+        width: 90%;
+        list-style: none;
+        margin: 0px;
+        display: flex;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    li {
+        width: 100%;
+        background-color: white;
+        list-style: none;
+        margin: 0px;
+        padding: 2%;
+        margin-top: 2%;
+        border-radius: 8px;
+
+        p {
+            color: #E56B6F;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 50%;
+            height: auto;
+            background: #f0f8ff;
+            border: none;
+            color: #E56B6F;
+            font-weight: bold;
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #C95E55;
+            color: #f0f8ff;
+
+        }
+
+    }
+
 }
 
-///style for the add task button
-#add_task {
-    background: white;
-    border: none;
-    color: #E56B6F;
-    width: 50%;
-    height: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-#add_task:hover {
-    background-color: #C95E55;
-    color: white;
-}
 
 ////set the add task window at the top 
 .t_form {
@@ -161,9 +193,14 @@ p{
 
 
 ///adjustment for the reading list div
+
+
 #reading_card {
+
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
+
 }

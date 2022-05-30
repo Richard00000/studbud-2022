@@ -82,9 +82,6 @@
 
 
 
-
-
-
     <div class="task">
 
       <div id="body">
@@ -116,77 +113,75 @@
         <!-- The Button for add task and the task list -->
         <div id="task_card">
           <button id="add_task">+ Add Task</button>
-              <p id="emptyList">You have not added any tasks yet.</p>
-              <ul>
-          </ul></div>
-
+          <p id="emptyList">You have not added any tasks yet!</p>
+          <ul></ul>
         </div>
 
-        <!-- Task form -->
-        <div id="task_grid" class="t_form" style="display: none">
-          <form id="taskform">
-
-            <!------------ Task input -------------->
-            <label for="task" style="margin-top: 3%; margin-left: 3%">Task:</label>
-            <input type="text" style="margin-left: 3%" name="task" id="taskInput" required="">
-
-            <!------------ Date input --------------->
-            <label for="dueDate" style="margin-top: 3%; margin-left: 3%">Due Date: </label>
-            <input type="date" style="margin-left: 3%" name="dueDate" id="dueDateInput">
-
-            <!------------- Est Time ---------------->
-            <label for="estimatedTime" style="margin-top: 3%; margin-left: 3%">EST completion time (in
-              hours):</label>
-            <input type="number" style="margin-left: 3%" min="0" name="estimatedTime" id="estimatedTimeInput">
-
-            <!------------ Priority ----------------->
-            <label for="priority" style="margin-top: 3%; margin-left: 3%">Task Priority:</label>
-            <select name="prority" style="margin-left: 3%" id="priorityInput">
-              <option value="">Select one</option>
-              <option value="Low">Low</option>
-              <option value="Medium">Medium</option>
-              <option value="High">High</option>
-            </select>
-
-            <!--Note-->
-            <label for="task_note" style="margin-top: 3%; margin-left: 3%">Note:</label>
-            <input id="task_note" style="margin-left: 3%" type="text" placeholder="Please enter the content...">
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-
-        <!----------------------------- The task list part end ----------------------------------->
-
-
-
-
-        <!----------------------------- The reading list part ----------------------------------->
-
-        <div id="topic">Reading List</div>
-        <div id="split"></div>
-        <div id="reading_card">
-
-          <div id="reading-grid">
-
-            <!------input box in the reading list------->
-            <form id="readingform">
-              <input type="text" name="reading" id="readInput" required="">
-              <button id="reading_submit" type="submit">Submit</button>
-            </form>
-
-            <!----The container for the reading list---->
-            <button id="open_all">Open All</button>
-
-            <div id="displyReading">
-              <p id="readingEmptyList">You have not added any reading yet.</p>
-              <ul></ul>
-            </div>
-          </div>
-        </div>
-
-        <!--------------------------The reading list End-------------------------------------->
       </div>
+
+      <!-- Task form -->
+      <div id="task_grid" class="t_form" style="display: none">
+        <form id="taskform">
+
+          <!------------ Task input -------------->
+          <label for="task" style="margin-top: 3%; margin-left: 3%">Task:</label>
+          <input type="text" style="margin-left: 3%" name="task" id="taskInput" required="">
+
+          <!------------ Date input --------------->
+          <label for="dueDate" style="margin-top: 3%; margin-left: 3%">Due Date: </label>
+          <input type="date" style="margin-left: 3%" name="dueDate" id="dueDateInput">
+
+          <!------------- Est Time ---------------->
+          <label for="estimatedTime" style="margin-top: 3%; margin-left: 3%">EST completion time (in
+            hours):</label>
+          <input type="number" style="margin-left: 3%" min="0" name="estimatedTime" id="estimatedTimeInput">
+
+          <!------------ Priority ----------------->
+          <label for="priority" style="margin-top: 3%; margin-left: 3%">Task Priority:</label>
+          <select name="prority" style="margin-left: 3%" id="priorityInput">
+            <option value="">Select one</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <!--Note-->
+          <label for="task_note" style="margin-top: 3%; margin-left: 3%">Note:</label>
+          <input id="task_note" style="margin-left: 3%" type="text" placeholder="Please enter the content...">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!----------------------------- The task list part end ----------------------------------->
+
+
+
+
+      <!----------------------------- The reading list part ----------------------------------->
+
+      <div id="topic">Reading List</div>
+      <div id="split"></div>
+      <div id="reading_card">
+
+        <!------input box in the reading list------->
+
+        <form id="readingform">
+          <input type="text" name="reading" id="readInput" required="">
+          <button id="reading_submit" type="submit">Submit</button>
+          <button id="open_all">Open All</button>
+        </form>
+
+        <!----The container for the reading list---->
+        <div id="displyReading">
+
+          <p id="readingEmptyList">You have not added any reading yet.</p>
+          <ul></ul>
+        </div>
+      </div>
+
+      <!--------------------------The reading list End-------------------------------------->
     </div>
+  </div>
   
 
 </body>

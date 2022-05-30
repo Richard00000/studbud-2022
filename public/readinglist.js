@@ -2,7 +2,7 @@
 const formRead = document.getElementById("readingform");
 const buttonR = document.querySelector("#readingform > button")
 
-// Selector for the tasklist output
+// Selector for the readinglist output
 var displyReading = document.querySelector("#displyReading > ul");
 
 // DOM elements for the task input fields
