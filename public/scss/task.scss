@@ -1,8 +1,3 @@
-///global Setting
-.task {
-    background-color: #E56B6F;
-}
-
 ///adjustment for header
 #body {
     margin-top: 20px;
@@ -193,8 +188,7 @@
 
 
 
-///adjustment for the reading list div
-
+///the style of the reading list div
 
 #reading_card {
 
@@ -281,7 +275,6 @@
             }
 
             ul {
-                // background-color: #f0f8ff;
                 width: 90%;
                 list-style: none;
                 margin: 0px;
@@ -318,11 +311,11 @@
                     transition-duration: 0.4s;
                     cursor: pointer;
                 }
-    
+
                 button:hover {
                     background: #C95E55;
                     color: #f0f8ff;
-    
+
                 }
             }
         }

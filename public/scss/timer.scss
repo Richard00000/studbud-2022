@@ -4,6 +4,7 @@
     margin: auto;
 }
 
+//The ourside ring/background for the timer
 #timer_display {
     display: inline-flex;
     align-items: center;
@@ -12,91 +13,98 @@
     height: 500px;
     margin-bottom: 40px;
     border-radius: 500px;
+
+    //The inner ring for the timer
+    #inn_ring {
+        background-color: #E56B6F;
+        align-items: center;
+        margin: auto;
+        width: 425px;
+        height: 425px;
+        border-radius: 400px;
+
+        //Time in the center
+        #time {
+            display: inline-flex;
+            text-align: center;
+            color: white;
+            font-size: 70px;
+            font-weight: bolder;
+            margin-top: 160px;
+        }
+
+    }
 }
 
-#inn_ring {
-    background-color: #E56B6F;
-    align-items: center;
-    margin: auto;
-    width: 425px;
-    height: 425px;
-    border-radius: 400px;
-}
 
-#time {
-    display: inline-flex;
-    text-align: center;
-    color: white;
-    font-size: 70px;
-    font-weight: bolder;
-    margin-top: 160px;
-}
-
-#mode_backgroud {
-    display: inline-flex;
-    align-items: center;
-    align-content: center;
-    background-color: #C95E55;
-    margin-top: 20px;
-    width: 430px;
-    height: 60px;
-    border-radius: 13px;
-
-}
-
+///Style of the switch mode div at the top of the timer
 #mode {
     margin-left: auto;
     margin-bottom: 55px;
+
+    //The background of the switch mode button
+    #mode_backgroud {
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+        background-color: #C95E55;
+        margin-top: 20px;
+        width: 430px;
+        height: 60px;
+        border-radius: 13px;
+    }
+    //The style of the pomodoro button
+    #timer_mode_po {
+        background: white;
+        border: none;
+        color: #E56B6F;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 13px;
+        margin: auto;
+        cursor: pointer;
+    }
+    //The style of the stopwatch button
+    #timer_mode_sw {
+        background: #C95E55;
+        border: none;
+        color: white;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 13px;
+        margin: auto;
+        cursor: pointer;
+
+    }
+
 }
 
+///Style of the stop/start and other button for the pomodoro and the stop watch
 #button {
     margin-top: 30px;
     margin-left: 10px;
-}
 
-#timer_mode_po {
-    background: white;
-    border: none;
-    color: #E56B6F;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 13px;
-    margin: auto;
-    cursor: pointer;
-}
+    button {
+        background: white;
+        border: none;
+        color: #E56B6F;
+        width: 180px;
+        height: 50px;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 13px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
 
-#timer_mode_sw {
-    background: #C95E55;
-    border: none;
-    color: white;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 13px;
-    margin: auto;
-    cursor: pointer;
+    button:hover {
+        background-color: #C95E55;
+        color: white;
+    }
 
-}
-
-
-#button button {
-    background: white;
-    border: none;
-    color: #E56B6F;
-    width: 180px;
-    height: 50px;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 13px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-#button button:hover {
-    background-color: #C95E55;
-    color: white;
 }

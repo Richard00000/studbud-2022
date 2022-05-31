@@ -5,7 +5,7 @@ const buttonR = document.getElementById("#reading_submit")
 // Selector for the readinglist output
 var displyReading = document.querySelector("#displayReading > ul");
 
-// DOM elements for the task input fields
+// DOM elements for the reading input fields
 var readInput = document.getElementById("readInput");
 
 // Form submission event listener
@@ -17,10 +17,10 @@ formRead.addEventListener("submit", function (event) {
     }
 })
 
-// Create global array to track tasks
+// Create global array to track readings
 var readingListArray = [];
 
-// Function to add task with user inputs as parameters
+// Function to add reading with user inputs as parameters
 function addRead(readDescription, completionStatus) {
     let read = {
         id: Date.now(),
@@ -33,10 +33,10 @@ function addRead(readDescription, completionStatus) {
 
 }
 
-// Function to display task on screen
+// Function to display reading on screen
 function renderRead(read) {
 
-    // Call function - checks if a task has been added
+    // Call function - checks if a reading has been added
     updateEmptyRead();
 
     // Create HTML elements
@@ -45,7 +45,7 @@ function renderRead(read) {
     item.innerHTML = "<p>" + read.readDescription + "</p>";
     displyReading.appendChild(item);
 
-    // Extra Task DOM elements
+    // Extra Reading DOM elements
     let delButton = document.createElement("button");
     let delButtonText = document.createTextNode("Delete Reading");
     delButton.appendChild(delButtonText);
@@ -76,7 +76,7 @@ function removeItemFromArray(arr, index) {
 }
 
 
-// Function to hide the 'you haven't added any tasks' text
+// Function to hide the 'You have not added any reading yet!' text
 function updateEmptyRead() {
     if (readingListArray.length > 0) {
         document.getElementById('readingEmptyList').style.display = 'none';

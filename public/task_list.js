@@ -93,7 +93,7 @@ function removeItemFromArray(arr, index) {
 }
 
 
-// Function to hide the 'you haven't added any tasks' text
+// Function to hide the 'you haven't added any tasks yet!' text
 function updateEmpty() {
     if (taskListArray.length > 0) {
         document.getElementById('emptyList').style.display = 'none';
@@ -101,3 +101,28 @@ function updateEmpty() {
         document.getElementById('emptyList').style.display = 'block';
     }
 }
+
+////////The code for hiding the add task windows
+
+// Basic form DOM elements
+var dis = false;
+var add_content = document.getElementById('task_grid');
+const add_task_btn = document.getElementById('add_task');
+
+//Code for the add task windows position
+add_content.style.top = (add_task_btn.offsetTop + add_task_btn.offsetHeight) + 'px';
+add_content.style.left = (add_task_btn.offsetLeft - 25) + 'px';
+
+//the function for the hding the add task windows
+add_task_btn.addEventListener('click', function () {
+    if (dis) {
+        add_content.style.display = "none";
+        dis = false;
+    }
+    else {
+        add_content.style.display = "block";
+        dis = true;
+    }
+});
+
+

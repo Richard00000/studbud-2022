@@ -40,24 +40,3 @@ st_btn.addEventListener("click", function () {
     po_btn.style.color = 'white';
 
 });
-
-
-///////////////////////////////////////////////////
-
-var dis = false;
-var add_content = document.getElementById('task_grid');
-const add_task_btn = document.getElementById('add_task');
-add_content.style.top = (add_task_btn.offsetTop + add_task_btn.offsetHeight) + 'px';
-add_content.style.left = (add_task_btn.offsetLeft - 25) + 'px';
-
-
-add_task_btn.addEventListener('click', function () {
-    if (dis) {
-        add_content.style.display = "none";
-        dis = false;
-    }
-    else {
-        add_content.style.display = "block";
-        dis = true;
-    }
-});
