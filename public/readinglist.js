@@ -1,9 +1,9 @@
 // Basic form DOM elements
 const formRead = document.getElementById("readingform");
-const buttonR = document.querySelector("#readingform > button")
+const buttonR = document.getElementById("#reading_submit")
 
 // Selector for the readinglist output
-var displyReading = document.querySelector("#displyReading > ul");
+var displyReading = document.querySelector("#displayReading > ul");
 
 // DOM elements for the task input fields
 var readInput = document.getElementById("readInput");

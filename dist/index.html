@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="">
-  <!--link rel="icon" href="img/favicon.png"!-->
   <link rel="stylesheet" href="/index.c74267d1.css">
 </head>
 
@@ -80,7 +79,7 @@
 
 
 
-
+    <!----------------------------- The interface of task and reading list ---------------------------------->
 
     <div class="task">
 
@@ -110,7 +109,7 @@
         <div id="topic">Task List</div>
         <div id="split"></div>
 
-        <!-- The Button for add task and the task list -->
+        <!----- The Button for add task and the task list ----->
         <div id="task_card">
           <button id="add_task">+ Add Task</button>
           <p id="emptyList">You have not added any tasks yet!</p>
@@ -159,29 +158,32 @@
 
       <!----------------------------- The reading list part ----------------------------------->
 
+      <!---------- Title ------------>
       <div id="topic">Reading List</div>
       <div id="split"></div>
       <div id="reading_card">
+        <div id="reading_content">
 
-        <!------input box in the reading list------->
+          <!------input box in the reading list------->
+          <form id="readingform">
+            <input type="text" name="reading" id="readInput" required="">
+            <button id="reading_submit" type="submit">Submit</button>
+            <button id="open_all">Open All</button>
+          </form>
 
-        <form id="readingform">
-          <input type="text" name="reading" id="readInput" required="">
-          <button id="reading_submit" type="submit">Submit</button>
-          <button id="open_all">Open All</button>
-        </form>
+          <!----The container for the reading list---->
+          <div id="displayReading">
+            <p id="readingEmptyList">You have not added any reading yet.</p>
+            <ul></ul>
+          </div>
 
-        <!----The container for the reading list---->
-        <div id="displyReading">
-
-          <p id="readingEmptyList">You have not added any reading yet.</p>
-          <ul></ul>
         </div>
       </div>
-
-      <!--------------------------The reading list End-------------------------------------->
     </div>
+
+    <!--------------------------The reading list End-------------------------------------->
   </div>
+  
   
 
 </body>
