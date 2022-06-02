@@ -59,7 +59,10 @@
         color: white;
     }
 
+    ///style for the text when there is no task
     #emptyList {
+        width: 75%;
+        text-align: center;
         border-radius: 8px;
         padding: 1%;
         background-color: white;
@@ -212,7 +215,7 @@
 
         #readInput {
             width: 80%;
-            height: 25px;
+            height: 28px;
             border-radius: 8px;
             border: none;
 
@@ -221,7 +224,7 @@
         #reading_submit {
             margin-left: 2%;
             width: 25%;
-            height: 28px;
+            height: 30px;
             background: white;
             border: none;
             color: #E56B6F;
@@ -239,7 +242,7 @@
         #open_all {
             margin-left: 2%;
             width: 25%;
-            height: 28px;
+            height: 30px;
             background: white;
             border: none;
             color: #E56B6F;
@@ -253,7 +256,7 @@
             background: #C95E55;
             color: white;
         }
-
+        //stule for the read display
         #displayReading {
 
             width: 100%;
@@ -262,8 +265,9 @@
             flex-direction: column;
             align-items: center;
 
+            ///style for the text when there is no task
             #readingEmptyList {
-                width: 80%;
+                width: 85%;
                 font-weight: bold;
                 margin: 0;
                 padding: 1%;

@@ -66,6 +66,7 @@ var pomodoro = {
         if (this.seconds == 0) {
             if (this.minutes == 0) {
                 this.timerComplete();
+                alert('Please choose the rest time or continue to work');
                 return;
             }
             this.seconds = 59;

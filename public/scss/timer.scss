@@ -49,7 +49,7 @@
         align-content: center;
         background-color: #C95E55;
         margin-top: 20px;
-        width: 430px;
+        width: 51%;
         height: 60px;
         border-radius: 13px;
     }
@@ -58,7 +58,7 @@
         background: white;
         border: none;
         color: #E56B6F;
-        width: 200px;
+        width: 48%;
         height: 50px;
         font-size: 20px;
         font-weight: bold;
@@ -71,7 +71,7 @@
         background: #C95E55;
         border: none;
         color: white;
-        width: 200px;
+        width: 48%;
         height: 50px;
         font-size: 20px;
         font-weight: bold;
@@ -85,16 +85,24 @@
 
 ///Style of the stop/start and other button for the pomodoro and the stop watch
 #button {
+    
     margin-top: 30px;
     margin-left: 10px;
+    width: 70%;
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
     button {
         background: white;
         border: none;
         color: #E56B6F;
-        width: 180px;
+        width: 40%;
         height: 50px;
         margin-left: 20px;
+        margin-top: 10px;
         font-size: 20px;
         font-weight: bold;
         border-radius: 13px;

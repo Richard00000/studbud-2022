@@ -1,0 +1,133 @@
+///Code for the mobile device(iPhone 12 Pro)
+
+@media only screen and (max-width:390px),
+only screen and (max-device-width:390px) {
+
+    ///Setting the grid to flex
+    .grid-container {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+
+        ///Setting the timer class style for the mobile device
+        .timer {
+            width: 100% !important;
+            grid-area: timer !important;
+            display: inline-flex !important;
+            flex-direction: column !important;
+            flex-wrap: nowrap !important;
+            align-items: center !important;
+
+            #mode {
+                width: 100% !important;
+                margin-bottom: 55px !important;
+
+                #mode_backgroud {
+                    width: 100% !important;
+                    height: 60px !important;
+                    background-color: #c95e55 !important;
+                    border-radius: 13px !important;
+                    align-content: center !important;
+                    align-items: center !important;
+                    margin-top: 20px !important;
+                    display: inline-flex !important;
+
+                    #pomodoro {
+                        width: 100% !important;
+
+                        #timer_display {
+                            width: 100% !important;
+                            height: 374px !important;
+                            background-color: #f0f8ff !important;
+                            border-radius: 500px !important;
+                            align-items: center !important;
+                            margin-bottom: 40px !important;
+                            display: inline-flex !important;
+
+                            #inn_ring {
+                                width: 90% !important;
+                                height: 336.59px !important;
+                                background-color: #e56b6f !important;
+                                border-radius: 400px !important;
+                                align-items: center !important;
+                                margin: auto !important;
+
+                                #time {
+                                    text-align: center !important;
+                                    color: #fff !important;
+                                    margin-top: 130px !important;
+                                    font-size: 70px !important;
+                                    font-weight: bolder !important;
+                                    display: inline-flex !important;
+                                }
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            ///Setting the pomodoro div style and size to adapte the mobile device
+            #pomodoro {
+                width: 100% !important;
+
+                #timer_display {
+                    width: 90% !important;
+                    height: 336.59px !important;
+
+                    #inn_ring {
+                        width: 90% !important;
+                        height: 302.93px !important;
+
+                        #time {
+                            margin-top: 100px !important;
+                        }
+
+                    }
+
+
+                }
+
+                #button {
+                    width: 100% !important;
+                    margin-left: 0px !important;
+
+                }
+
+            }
+
+            ///Setting the stop watch div style and size to adapte the mobile device
+            #count_up {
+                width: 100% !important;
+
+                #timer_display {
+                    width: 90% !important;
+                    height: 336.59px !important;
+
+                    #inn_ring {
+                        width: 90% !important;
+                        height: 302.93px !important;
+
+                        #time {
+                            margin-top: 100px !important;
+                        }
+
+                    }
+
+
+                }
+
+                #button {
+                    width: 100% !important;
+                    margin-left: 0px !important;
+
+                }
+
+            }
+
+        }
+    }
+}

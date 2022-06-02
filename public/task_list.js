@@ -68,7 +68,6 @@ function renderTask(task) {
     delButton.appendChild(delButtonText);
     item.appendChild(delButton);
 
-
     // Event Listeners for DOM elements
     delButton.addEventListener("click", function (event) {
         event.preventDefault();
@@ -111,7 +110,7 @@ const add_task_btn = document.getElementById('add_task');
 
 //Code for the add task windows position
 add_content.style.top = (add_task_btn.offsetTop + add_task_btn.offsetHeight) + 'px';
-add_content.style.left = (add_task_btn.offsetLeft - 25) + 'px';
+add_content.style.left = (add_task_btn.offsetLeft - 30) + 'px';
 
 //the function for the hding the add task windows
 add_task_btn.addEventListener('click', function () {
